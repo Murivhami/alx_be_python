@@ -1,7 +1,7 @@
 #!/bin/bash
 #Defining variables
 number1 = 10
-number2 = 2
+number2 = 5
 
 #Arithmetic operations
 sum = number1 + number2
