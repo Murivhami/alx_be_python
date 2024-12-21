@@ -15,9 +15,11 @@ match operation:
         multiply = num2 * num1
         print(f"The result is {multiply} ")
     case "/":
-        match num2:
-            case 0:
-                print(f"Cannot divide by 0")
-            case _ :
-                divide = num1 / num2
-                print(f"The result is {divide} ")
+        if num2 == 0:
+            print("Cannot divide by 0")
+        else:
+            divide = num1 / num2
+            print(f"The result is {divide} ")
+
+
+
