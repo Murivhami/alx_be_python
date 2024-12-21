@@ -2,7 +2,7 @@
 
 #Prompts the user to input the weather.
 
-current_weather = input("What's the weather like today? (sunny/rainy/cold):.")
+current_weather = input("What's the weather like today? (sunny/rainy/cold): ")
 
 #Define conditions for code execution.
 if current_weather == "sunny":
@@ -12,4 +12,4 @@ elif current_weather == "rainy":
 elif current_weather == "cold":
     print("Make sure to wear a warm coat and a scarf.")
 else:
-    print("Sorry, I don't have recommendations for this weather.")
+    print("Sorry, I don't have recommendations for this weather.)
