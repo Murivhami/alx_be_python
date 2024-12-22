@@ -1,7 +1,8 @@
 #!/bin/bash
 Task = input("Enter you task: ")
-Priority = input("Priority (high/medium/low): ")
 Time_Bound = input("Is it time-bound? (yes/no): ")
+Priority = input("Priority (high/medium/low): ")
+
 
 match Priority:
     case "high":
