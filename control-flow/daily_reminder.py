@@ -1,12 +1,12 @@
 #!/bin/bash
-task = input("Enter you task: ")
-priority = input("Priority (high/medium/low): ")
-time_bound = input("Is it time-bound? (yes/no): ")
+Task = input("Enter you task: ")
+Priority = input("Priority (high/medium/low): ")
+Time_Bound = input("Is it time-bound? (yes/no): ")
 
-match priority:
+match Priority:
     case "high":
-        if time_bound == "yes":
-            print(f"Reminder: '{task}' is a {priority} priority task that requires immediate attention!")
+        if Time_Bound == "yes":
+            print(f"Reminder: '{Task}' is a {Priority} priority task that requires immediate attention!")
     case "low":
         time_bound = "no"
-        print(f"Note: '{task}' is a {priority} priority task. Consider completing it when you have free time.")
+        print(f"Note: '{Task}' is a {Priority} priority task. Consider completing it when you have free time.")
