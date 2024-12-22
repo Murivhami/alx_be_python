@@ -1,5 +1,7 @@
 #!/bin/bash
-Task = input("Enter you task: ")
+#Prompt for a single task
+
+Task = input("Enter your task: ")
 Time_Bound = input("Is it time-bound? (yes/no): ")
 Priority = input("Priority (high/medium/low): ")
 
