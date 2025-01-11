@@ -14,7 +14,7 @@ def perform_operation(num1, num2, operation):
         return num1 * num2
     elif operation == 'divide':
         #retrun a result for division by zero.
-        if num2 == 0.0:
+        if num2 == 0:
             return "Division by zero not possible"
         return num1 / num2
 
