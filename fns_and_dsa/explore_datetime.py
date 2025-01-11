@@ -1,21 +1,21 @@
 #!/bin/bash
-import datetime
+from datetime import datetime
 # Create a function
 
 def display_current_datetime():
-    current_date = datetime.datetime.now()
+    current_date = datetime.now()
     return current_date
 
 current_date = display_current_datetime()
 formatted_datetime = current_date.strftime("%Y-%m-%d %H:%M:%S")
 print(f"Current date and time: {formatted_datetime}")
 
-import datetime
+from datetime import datetime, timedelta
 #Calculate future date.
 number_of_days = int(input("Enter the number of days to add to the current date: "))
 def calculate_future_date():
-    current_date = datetime.datetime.now()
-    tdelta = datetime.timedelta(days = number_of_days)
+    current_date = datetime.now()
+    tdelta = timedelta(days = number_of_days)
     future_date = current_date + tdelta
     return future_date
 
