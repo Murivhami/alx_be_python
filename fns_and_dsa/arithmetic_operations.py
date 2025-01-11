@@ -1,7 +1,7 @@
 #!/bin/bash
 # Creating a function to perform arithmetic operations,
 
-def perform_operation():
+def perform_operation(num1, num2, operation):
     #define type
     num1 = float(input("Enter the first number: "))
     num2 = float(input("Enter the second number: "))
@@ -18,5 +18,5 @@ def perform_operation():
             return "Division by zero not possible"
         return num1 / num2
 
-result = perform_operation()
+result = perform_operation("{num1}", "{num2}", "{operation}")
 print(f"{result}")
