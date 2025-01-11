@@ -1,38 +1,43 @@
 #!/bin/bash
-#Create an empty list.
+def display_menu():
+    print("Shopping List Manager")
+    print("1. Add Item")
+    print("2. Remove Item")
+    print("3. View List")
+    print("4. Exit")
 
-shopping_list = []
+def main():
+    shopping_list = []
+    while True:
+        display_menu()
+        choice = input("Enter your choice: ")
 
-#Define function to add items.
+        if choice == '1':
+            # Prompt for and add an item
+            item = input("Item to add: ")
+            shopping_list.append(item)
+            return(f"{item} has been added to the list.")
+        
+        elif choice == '2':
+            # Prompt for and remove an item
+            item = input("Item to remove: ")
+            if item in shopping_list:
+                shopping_list.remove(item)
+                return(f"{item} has been removed")
+            else:
+                return(f"'{item}' was not found in the shopping list.")
 
-def add():
-    item = input("Item to add: ")
-    shopping_list.append(item)
-    return(f"{item} has been added to the list.")
-#result = add("item")
-#print(f"{result}")
+        elif choice == '3':
+            # Display the shopping list
+            if shopping_list:
+                return(f"Shopping list: ")
+            else:
+                return(f"Shopping list is empty")
+        elif choice == '4':
+            print("Goodbye!")
+            break
+        else:
+            print("Invalid choice. Please try again.")
 
-#Define function to remove items.
-
-def remove():
-    item = input("Item to remove: ")
-    for item in shopping_list:
-        shopping_list.remove(item)
-        return(f"{item} has been removed")
-    else:
-        return(f"{item} not found on list")
-
-#answer = remove("items")
-#print(f"{answer}")
-
-
-def display():
-    if shopping_list:
-        for item in shopping_list:
-            return item
-    else:
-        return(f"the list is empty")
-#output = display("items")
-#print("output")
-
-
+if __name__ == "__main__":
+    main()
