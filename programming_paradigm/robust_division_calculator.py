@@ -3,8 +3,8 @@
 
 def safe_divide(numerator, denominator):
     try:
-        numerator = float(input("Numerator: "))
-        denominator = float(input("Denominator: "))
+        numerator = float(numerator)
+        denominator = float(denominator)
         result = numerator/denominator
         if denominator == 0:
             raise ZeroDivisionError
