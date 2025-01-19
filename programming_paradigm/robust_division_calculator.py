@@ -16,5 +16,5 @@ def safe_divide(numerator, denominator):
         return(f"The result of the division is {result:.1f}")
 
 
-output = safe_divide(numerator=2, denominator=1)
-print(f"{output}")
+#output = safe_divide(numerator=2, denominator=1)
+#print(f"{output}")
