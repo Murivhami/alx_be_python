@@ -35,8 +35,8 @@ class Library:
      def list_books(self):
           for book in self.books:
                print(book)
-          else:
-               print("The list is empty")
+          #else:
+               #print("The list is empty")
      
 
 my_library = Library()
