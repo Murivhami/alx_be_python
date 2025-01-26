@@ -18,6 +18,6 @@ class Circle(Shape):
     def area(self):
         return math.pi * self.radius ** 2
 
-shapes = [Rectangle(5, 8), Circle(2)]
-for shape in shapes:
-    print(f"The area of the {shape.__class__.__name__} is: {shape.area()}")
+#shapes = [Rectangle(5, 8), Circle(2)]
+#for shape in shapes:
+    #print(f"The area of the {shape.__class__.__name__} is: {shape.area()}")
