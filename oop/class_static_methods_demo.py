@@ -1,7 +1,10 @@
 #!/bin/bash
-class Calculator:
-    calculation_type = "multiply"
 
+class Calculator:
+    calculation_type = "Arithmetic Operations"
+    def __init__(self, calculation_type):
+        self.calculation_type = "multiply"
+    
     @staticmethod
     def add(a, b):
         return a + b
